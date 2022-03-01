@@ -5,12 +5,12 @@ Vue.config.devtools = true;
 const root = new Vue({
     el: '#root',
     data: {
-        disc: [],
+        discs: [],
     },
     methods: {
         searchDisc() {
             axios.get('http://localhost/pomeriggio/php-ajax-dischi/includes/var.php').then(
-                res => { this.disc = res.data; }
+                res => { this.discs = res.data; }
             ).catch(err => { console.log(err) });
         }
     },
