@@ -16,7 +16,7 @@
 
 header{
     background-color: red;
-    height: auto;
+    height: 50px;
 }
 
 main{
@@ -28,8 +28,7 @@ main{
 .card{
     flex-basis: calc(100% / 12 * 2);
     max-height: calc(100% / 12 * 2);
-    height: 300px;
-    /* width: 200px; */
+    height: 350px;
     background-color: red;
     margin: 25px;
 
@@ -54,6 +53,8 @@ main{
     margin-top: 7px;
     color: white;
 }
+
+
 
 .card-author{
     margin-top: 17px;

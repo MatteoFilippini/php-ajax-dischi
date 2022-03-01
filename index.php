@@ -64,132 +64,26 @@ $database = [
 
 <body>
     <header>
-        <ul>
-            <!-- ciclo per prendre ogni disco -->
-            <?php foreach ($database as $disc) : ?>
-                <li><?= $disc['title'] ?></li>
-            <?php endforeach ?>
-        </ul>
+        logo
     </header>
     <main>
         <div class="container">
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
+            <!-- ciclo per prendre ogni disco -->
+            <?php foreach ($database as $disc) : ?>
+                <div class="card">
+                    <div class="card-image">
+                        <figure>
+                            <img src="<?= $disc['poster'] ?>" alt="a">
+                        </figure>
+                    </div>
+                    <div class="card-title">
+                        <h2><?= strtoupper($disc['title'])  ?></h2>
+                    </div>
+                    <div class="card-author">
+                        <?= $disc['author'] ?>
+                    </div>
                 </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
-                </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
-                </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
-                </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
-                </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
-                </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
-                </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
-                </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <figure>
-                        <img src="<?= $database[0]['poster'] ?>" alt="a">
-                    </figure>
-                </div>
-                <div class="card-title">
-                    <h2><?= $database[0]['title'] ?></h2>
-                </div>
-                <div class="card-author">
-                    autore
-                </div>
-            </div>
+            <?php endforeach ?>
         </div>
     </main>
 
