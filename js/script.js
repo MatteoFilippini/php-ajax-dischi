@@ -9,7 +9,7 @@ const root = new Vue({
     },
     methods: {
         searchDisc() {
-            axios.get('http://localhost/pomeriggio/php-ajax-dischi/includes/var.php').then(
+            axios.get('http://localhost/pomeriggio/php-ajax-dischi/api/discs.php').then(
                 res => { this.discs = res.data; }
             ).catch(err => { console.log(err) });
         }
